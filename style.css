@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Gingham";
+    src: url(Gingham/Gingham.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "Sono[wght]";
+    src: url(sono/fonts/variable/Sono[wght].woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: "Morena-Light";
+    src: url(morena-cufonfonts-webfont/Morena-Light.woff) format('woff');
+}
+
+html {
+    font-family: "Sono[wght]";
+}
+
+
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-variation-settings: "wght" 0, "wdth" 0;
+    font-size: 200px;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+}
+
+
+.anim {
+    animation: variab 2s infinite alternate linear;
+}
+
+@keyframes variab {
+    from {
+        font-variation-settings: "wght" 0;
+    }
+    to {
+        font-variation-settings: "wght" 800;
+    }
+}
